@@ -30,7 +30,6 @@ export default function QuoteArea() {
 
 	return (
 		<figure className="grid grid-areas-layout grid-cols-layout grid-rows-layout gap-3 w-full">
-			{/*Image*/}
 			<img
 				alt="Quote Author"
 				className="grid-in-img"
