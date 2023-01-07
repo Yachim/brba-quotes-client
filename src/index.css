@@ -12,10 +12,14 @@
 	}
 
 	body {
-		@apply text-text bg-bg;
+		@apply text-text bg-siteBg;
 	}
 
 	#root {
 		@apply w-full h-full flex flex-col justify-center items-center;
 	}
+}
+
+@layer utilities {
+	
 }

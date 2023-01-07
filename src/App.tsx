@@ -6,7 +6,7 @@ const queryClient = new QueryClient();
 
 export default function App() {
 	return (
-		<div className="w-2/5">
+		<div className="w-2/5 bg-panelBg shadow-xl">
 			<QueryClientProvider client={queryClient} >
 				<QuoteArea />
 			</QueryClientProvider>

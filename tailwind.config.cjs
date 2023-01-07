@@ -7,7 +7,9 @@ module.exports = {
 	theme: {
 		colors: {
 			accent: "hsl(143deg, 100%, 24%)",
-			bg: "hsl(143deg, 100%, 99.5%)",
+			siteBg: "hsl(143deg, 100%, 99.5%)",
+			panelBg: "hsl(143deg, 100%, 95%)",
+			footerBg: "hsl(143deg, 15%, 90%)",
 			text: "hsl(143deg, 100%, 3%)"
 		},
 		extend: {

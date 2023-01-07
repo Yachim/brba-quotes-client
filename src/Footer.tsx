@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
 	return (
-		<footer className="flex justify-center items-center p-4 gap-4 w-full">
+		<footer className="flex justify-center items-center p-4 gap-4 w-full bg-footerBg">
 			<p>
 				<a 
 					href="https://github.com/Yachim/brba-quotes-client"

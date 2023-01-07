@@ -35,10 +35,10 @@ export default function QuoteArea() {
 				className="grid-in-img"
 				src={imageSrc}
 			/>
-			<blockquote className="grid-in-quote italic mt-2">
+			<blockquote className="grid-in-quote italic mt-3 mr-3">
 				{data!.quote}
 			</blockquote>
-			<figcaption className="grid-in-author text-accent flex items-end mb-2">{data?.author}</figcaption>
+			<figcaption className="grid-in-author text-accent flex items-end mb-3 mr-3">{data?.author}</figcaption>
 		</figure>
 	);
 }
