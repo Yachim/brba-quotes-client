@@ -6,16 +6,16 @@ export default function QuoteArea() {
 
 	if (status === "loading") {
 		return (
-			<main className="w-screen h-screen flex justify-center items-center">
+			<figcaption className="w-full flex justify-center items-center">
 				Loading quote...
-			</main>
+			</figcaption>
 		)
 	}
 	else if (status === "error") {
 		return (
-			<main className="w-screen h-screen flex justify-center items-center">
+			<figcaption className="w-full flex justify-center items-center">
 				Error loading quote.
-			</main>
+			</figcaption>
 		)
 	}
 

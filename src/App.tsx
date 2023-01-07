@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "react-query";
+import Footer from "./Footer";
 import QuoteArea from "./QuoteArea";
 
 const queryClient = new QueryClient();
@@ -9,6 +10,7 @@ export default function App() {
 			<QueryClientProvider client={queryClient} >
 				<QuoteArea />
 			</QueryClientProvider>
+			<Footer/>
 		</div>
 	);
 }
