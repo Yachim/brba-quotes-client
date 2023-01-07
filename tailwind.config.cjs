@@ -16,7 +16,7 @@ module.exports = {
 				layout: "1fr 40ch"
 			},
 			gridTemplateRows: {
-				layout: "1fr 1.5rem"
+				layout: "min-content 1.5rem"
 			}
 		},
   	},
