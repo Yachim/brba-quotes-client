@@ -7,7 +7,15 @@
 		font-size: 16px;
 	}
 
+	html, body, #root {
+		@apply w-full h-full;
+	}
+
 	body {
 		@apply text-text bg-bg;
+	}
+
+	#root {
+		@apply w-full h-full flex justify-center items-center;
 	}
 }

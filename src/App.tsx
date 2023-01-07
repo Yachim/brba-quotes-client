@@ -5,8 +5,10 @@ const queryClient = new QueryClient();
 
 export default function App() {
 	return (
-		<QueryClientProvider client={queryClient} >
-			<QuoteArea />
-		</QueryClientProvider>
+		<div className="w-2/5">
+			<QueryClientProvider client={queryClient} >
+				<QuoteArea />
+			</QueryClientProvider>
+		</div>
 	);
 }

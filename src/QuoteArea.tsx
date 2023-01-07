@@ -29,19 +29,17 @@ export default function QuoteArea() {
 	const imageSrc = new URL(`./assets/${imageName}.webp`, import.meta.url).href;
 
 	return (
-		<main className="w-screen h-screen flex justify-center items-center">
-			<figure className="grid grid-areas-layout grid-cols-layout grid-rows-layout gap-3 w-2/5">
-				{/*Image*/}
-				<img
-					alt="Quote Author"
-					className="grid-in-img"
-					src={imageSrc}
-				/>
-				<blockquote className="grid-in-quote italic mt-2">
-					{data!.quote}
-				</blockquote>
-				<figcaption className="grid-in-author text-accent flex items-end mb-2">{data?.author}</figcaption>
-			</figure>
-		</main>
+		<figure className="grid grid-areas-layout grid-cols-layout grid-rows-layout gap-3 w-full">
+			{/*Image*/}
+			<img
+				alt="Quote Author"
+				className="grid-in-img"
+				src={imageSrc}
+			/>
+			<blockquote className="grid-in-quote italic mt-2">
+				{data!.quote}
+			</blockquote>
+			<figcaption className="grid-in-author text-accent flex items-end mb-2">{data?.author}</figcaption>
+		</figure>
 	);
 }
