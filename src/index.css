@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		font-size: 16px;
+	}
+
+	body {
+		@apply text-text bg-bg;
+	}
+}

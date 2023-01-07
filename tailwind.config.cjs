@@ -5,6 +5,11 @@ module.exports = {
     	"./src/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
+		colors: {
+			accent: "hsl(143deg, 100%, 24%)",
+			bg: "hsl(143deg, 100%, 99.5%)",
+			text: "hsl(143deg, 100%, 3%)"
+		},
 		extend: {
 			gridTemplateAreas: {
 				layout: [

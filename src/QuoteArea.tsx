@@ -19,7 +19,13 @@ export default function QuoteArea() {
 		)
 	}
 
-	const [imageName] = data!.author.split(" ");
+	if (data!.author === "Gus Fring") data!.author = "Gustavo Fring";
+	
+	let imageName: string;
+	if (data!.author === "Walter White Jr") imageName = "Jr";
+	else {
+		[imageName] = data!.author.split(" ");
+	}
 	const imageSrc = new URL(`./assets/${imageName}.webp`, import.meta.url).href;
 
 	return (
@@ -34,7 +40,7 @@ export default function QuoteArea() {
 				<blockquote className="grid-in-quote">
 					{data!.quote}
 				</blockquote>
-				<figcaption className="text-center grid-in-author">{data?.author}</figcaption>
+				<figcaption className="text-center grid-in-author text-accent">{data?.author}</figcaption>
 			</figure>
 		</main>
 	);
