@@ -14,14 +14,14 @@ module.exports = {
 			gridTemplateAreas: {
 				layout: [
 					"img quote",
-					"author quote"
+					"img author"
 				]
 			},
 			gridTemplateColumns: {
 				layout: "1fr 40ch"
 			},
 			gridTemplateRows: {
-				layout: "min-content 1.5rem"
+				layout: "min-content 3rem"
 			}
 		},
   	},
