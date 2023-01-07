@@ -100,7 +100,7 @@ export default function QuoteArea() {
 						target="_blank"
 						className="text-accent"
 					>
-						Photo
+						Image
 					</a>
 					<> provided by </>
 					<a 
