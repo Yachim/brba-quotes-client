@@ -38,7 +38,7 @@ const profiles = {
 	},
 	The: {
 		profile: "https://breakingbad.fandom.com/wiki/Fly",
-		photo: "https://www.imdb.com/title/tt1615550/mediaviewer/rm994314496/?ref_=tt_ov_i"
+		photo: "https://breakingbad.fandom.com/wiki/Fly_(insect)?so=search&file=Flyglidingoverall.png"
 	},
 	Walter: {
 		profile: "https://breakingbad.fandom.com/wiki/Walter_White",
@@ -73,14 +73,6 @@ export default function QuoteArea() {
 	}
 	const imageSrc = new URL(`./assets/${imageName}.webp`, import.meta.url).href;
 
-	const service = data!.author === "The fly" ? {
-		name: "IMDb",
-		link: "https://www.imdb.com/"
-	} : {
-		name: "Fandom",
-		link: "https://breakingbad.fandom.com/wiki/Breaking_Bad_Wiki"
-	};
-
 	return (
 		<figure className="
 			grid w-full
@@ -95,16 +87,16 @@ export default function QuoteArea() {
 			<blockquote className="
 				grid-in-quote italic p-3
 			">
-				<button onClick={() => refetch()} className="grid place-items-center hover:text-accent p-2 float-right ml-2">
+				<button onClick={() => refetch()} className="grid place-items-center hover:text-accent p-[0.375rem] float-right ml-2">
 					<FontAwesomeIcon className="aspect-square transition-colors duration-300" icon={faArrowsRotate} spin={isRefetching} />
 				</button>
 				{data!.quote}
 			</blockquote>
 			<figcaption className="grid-in-author flex items-end justify-between p-3 gap-4">
-				<a href={profiles[imageName as keyof typeof profiles].profile} target="_blank" className="text-accent">{data?.author}</a>
+				<a href={profiles[imageName as keyof typeof profiles].profile} target="_blank" className="text-accent">{data!.author}</a>
 				<p className="text-right">
 					<a 
-						href={profiles[imageName as keyof typeof profiles].photo}
+						href="https://breakingbad.fandom.com/wiki/Fly_(insect)?so=search&file=Flyglidingoverall.png"
 						target="_blank"
 						className="text-accent"
 					>
@@ -112,11 +104,11 @@ export default function QuoteArea() {
 					</a>
 					<> provided by </>
 					<a 
-						href={service.link}
+						href="https://breakingbad.fandom.com/wiki/Breaking_Bad_Wiki"
 						target="_blank"
 						className="text-accent"
 					>
-						{service.name}
+						Fandom
 					</a>
 				</p>
 			</figcaption>
