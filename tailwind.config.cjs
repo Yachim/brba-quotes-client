@@ -29,8 +29,8 @@ module.exports = {
 				layoutMobile: "1fr"
 			},
 			gridTemplateRows: {
-				layout: "min-content 3rem",
-				layoutMobile: "min-content 1fr 3rem"
+				layout: "min-content auto",
+				layoutMobile: "min-content 1fr auto"
 			}
 		},
   	},
