@@ -9,13 +9,11 @@ export default function Footer() {
 					href="https://github.com/Yachim/brba-quotes-client"
 					target="_blank"
 					className="text-accent underline hover:opacity-[0.65] transition-opacity duration-300"
-				>Project</a> 
-				&nbsp;by&nbsp;
-				<a
+				>Project</a> by <a
 					href="https://yachim.cz" 
 					target="_blank"
 					className="text-accent underline hover:opacity-[0.65] transition-opacity duration-300"
-				>Jáchym Kohout</a>
+				>Jáchym&nbsp;Kohout</a>
 			</p>
 			<p className="flex gap-2">
 				<a className="hover:text-accent transition-colors duration-300" href="https://github.com/Yachim" title="GitHub">
