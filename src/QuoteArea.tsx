@@ -1,3 +1,5 @@
+import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useQuery } from "react-query";
 import fetchQuote from "./query";
 
@@ -45,7 +47,7 @@ const profiles = {
 }
 
 export default function QuoteArea() {
-	const { data, status } = useQuery("quote", fetchQuote, {staleTime: Infinity});
+	const { data, status, refetch, isRefetching } = useQuery("quote", fetchQuote, {staleTime: Infinity});
 
 	if (status === "loading") {
 		return (
@@ -93,6 +95,9 @@ export default function QuoteArea() {
 			<blockquote className="
 				grid-in-quote italic p-3
 			">
+				<button onClick={() => refetch()} className="grid place-items-center hover:text-accent p-2 float-right ml-2">
+					<FontAwesomeIcon className="aspect-square transition-colors duration-300" icon={faArrowsRotate} spin={isRefetching} />
+				</button>
 				{data!.quote}
 			</blockquote>
 			<figcaption className="grid-in-author flex items-end justify-between p-3 gap-4">
